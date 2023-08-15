@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/Shivang loo.png" class="logo" width="140px"">
+            <ul>
+                <li><a href = " #">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headtext">
+                <p>Programmer</p>
+                <h1>Hi I'm <span>Shivang</span> Pandey<br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="images/14737691-150a-4bba-b6b7-9b8fe1929584.jpg">
+                </div>
+                <div class="About-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p>Hey I'm Shivang, currently pursuing my Btech from MNNIT.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Expercience')">Expercience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
+                            <li><span>Web devlopment</span><br>Web App devlopment</li>
+                            <li><span>CP</span><br>Just Started</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Expercience">
+                        <ul>
+                            <li><span>Fresher</span><br>None</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>Btech</span><br>MNNIT(2021-25) CPI-9.04</li>
+                            <li><span>12th</span><br>KVS 94.2%</li>
+                            <li><span>10th</span><br>KVS 93.4%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Services---------->
+
+    <div id = "services">
+        <h1 class = "sub-title">My services</h1>
+          
+         <div class="services-list">
+           
+         </div>
+
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            } for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab"); 1
+        }
+    </script>
+</body>
+
+</html>

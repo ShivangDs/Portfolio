@@ -1,0 +1,83 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  /* Logo and Navigation Menu styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Homepage content styles */
+  .content {
+    padding: 40px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* About Us section styles */
+  #about-us {
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Donate section styles */
+  #donate {
+    padding: 40px;
+  }
+  
+  /* Volunteer section styles */
+  #volunteer {
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    padding: 40px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .hero {
+      height: 300px;
+    }
+  }
+  
